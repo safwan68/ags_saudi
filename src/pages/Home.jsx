@@ -1,20 +1,18 @@
 import React from "react";
-import Hero from "../components/Hero";
-// import ServiceSlider from "../components/ServiceSlider";
-// import ClientLogos from "../components/ClientLogos";
-// import Reviews from "../components/Reviews";
-import AboutAndNews from "../components/AboutAndNews";
-import Footer from "../components/Footer";
-import AboutSection from "../components/AboutSectionHomeScreen";
-import Services from "../components/ServiceCard";
+import Hero from "../components/HomeComponents/Hero";
+import AboutSection from "../components/HomeComponents/AboutSectionHomeScreen";
+import Services from "../components/HomeComponents/ServiceCard";
+import Clientele from "../components/HomeComponents/Clientele";
+import SectionFour from "../components/HomeComponents/SectionFour";
 
 export default function Home() {
   return (
     <>
       <Hero />
       <AboutSection />
-      <AboutAndNews />
       <Services />
+      <SectionFour />
+      <Clientele />
     </>
   );
 }
