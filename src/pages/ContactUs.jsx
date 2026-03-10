@@ -12,7 +12,7 @@ import {
   Alert,
   Grid,
 } from "@mui/material";
-import aboutUsImg from "../assets/aboutUs/aboutUs2.jpg"; // update path as needed
+import aboutUsImg from "../assets/ContactUs/Contact-Us.jpg";
 
 // Google Form endpoint and entry mapping (from your form)
 const FORM_ACTION =
@@ -138,7 +138,7 @@ export default function ContactUs() {
   return (
     <Box>
       {/* Hero Banner */}
-      <Box
+      {/* <Box
         sx={{
           minHeight: { xs: 240, sm: 350 },
           display: "flex",
@@ -184,7 +184,7 @@ export default function ContactUs() {
             service requests.
           </Typography>
         </Box>
-      </Box>
+      </Box> */}
 
       {/* Contact Form Section */}
       <Container sx={{ py: { xs: 4, md: 8 } }}>

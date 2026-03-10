@@ -106,6 +106,7 @@ import {
   useMediaQuery,
 } from "@mui/material";
 import "@fontsource/playfair-display";
+import aboutUs from "../../assets/HomePage/about-us-home.jpg";
 
 export default function AboutSection() {
   const theme = useTheme();
@@ -191,7 +192,7 @@ export default function AboutSection() {
           >
             <Box
               component="img"
-              src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8dGVhbXdvcmt8ZW58MHx8MHx8fDA%3D"
+              src={aboutUs}
               alt="About Us"
               sx={{
                 width: "100%",

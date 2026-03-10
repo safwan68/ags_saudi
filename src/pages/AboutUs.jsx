@@ -86,7 +86,7 @@ export default function AboutUs() {
       {/* Hero Banner */}
       <Box
         sx={{
-          minHeight: { xs: 240, sm: 350 },
+          minHeight: { xs: 240, sm: 300 },
           display: "flex",
           alignItems: "center",
           justifyContent: "center",
@@ -101,7 +101,7 @@ export default function AboutUs() {
         <Typography
           variant="h2"
           fontWeight="700"
-          sx={{ fontSize: { xs: 32, md: 48 } }}
+          sx={{ fontSize: { xs: 32, md: 48 }, color: "#f9f6f2" }}
         >
           About Us
         </Typography>

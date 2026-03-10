@@ -26,6 +26,7 @@ const sub = [
   { text: "Civil Works", to: "/services/civil-works" },
   { text: "Fencing Work", to: "/services/fencing-work" },
   { text: "Scaffolding", to: "/services/scaffolding" },
+  { text: "Transportation", to: "/services/transport" },
 ];
 
 export default function TradeSupply() {
@@ -36,7 +37,7 @@ export default function TradeSupply() {
       {/* Hero Banner */}
       <Box
         sx={{
-          minHeight: { xs: 240, sm: 350 },
+          minHeight: { xs: 240, sm: 300 },
           display: "flex",
           alignItems: "center",
           justifyContent: "center",
@@ -51,7 +52,7 @@ export default function TradeSupply() {
         <Typography
           variant="h2"
           fontWeight="700"
-          sx={{ fontSize: { xs: 32, md: 48 } }}
+          sx={{ fontSize: { xs: 32, md: 48 }, color: "#f9f6f2" }}
         >
           Trading And Supply
         </Typography>
@@ -80,7 +81,7 @@ export default function TradeSupply() {
         }}
       >
         <Grid size={{ xs: 12, md: 8 }}>
-          <ImageStack />
+          <ImageStack category="trading" />
           <Box m={1} margin={3}>
             <Typography
               mt={1.5}

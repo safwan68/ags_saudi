@@ -20,6 +20,8 @@ import ContactUs from "./pages/ContactUs";
 import ManpowerSupply from "./pages/Services/ManpowerSupply";
 import CivilWorks from "./pages/Services/CivilWorks";
 import Scaffolding from "./pages/Services/Scaffolding";
+import FencingWorks from "./pages/Services/Fencing";
+import Transport from "./pages/Services/Transport";
 
 function App() {
   return (
@@ -44,7 +46,8 @@ function App() {
           <Route path="/services/manpower" element={<ManpowerSupply />} />
           <Route path="/services/civil-works" element={<CivilWorks />} />
           <Route path="/services/scaffolding" element={<Scaffolding />} />
-          <Route path="/services/fencing-work" element={<Scaffolding />} />
+          <Route path="/services/fencing-work" element={<FencingWorks />} />
+          <Route path="/services/transport" element={<Transport />} />
         </Routes>
       </Box>
       <WhatsAppFloat />

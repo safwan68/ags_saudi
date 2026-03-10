@@ -6,9 +6,6 @@ import { Button, Stack, Typography } from "@mui/material";
 import aboutUsImg from "../../assets/aboutUs/aboutUs2.jpg";
 import ImageStack from "../../components/CommonCompoents/ImageStack";
 import { useLocation, useNavigate } from "react-router-dom";
-import TradeSupplyGrid from "../../components/Services/TradingSupplyCards";
-import CivilWorkGrid from "../../components/Services/CivilWorksGrid";
-import ScaffoldingGrid from "../../components/Services/ScaffoldingGrid";
 import FencingGrid from "../../components/Services/FencingGrid";
 
 const Item = styled(Paper)(({ theme }) => ({
@@ -29,6 +26,7 @@ const sub = [
   { text: "Civil Works", to: "/services/civil-works" },
   { text: "Fencing Work", to: "/services/fencing-work" },
   { text: "Scaffolding", to: "/services/scaffolding" },
+  { text: "Transportation", to: "/services/transport" },
 ];
 
 export default function FencingWorks() {
@@ -39,7 +37,7 @@ export default function FencingWorks() {
       {/* Hero Banner */}
       <Box
         sx={{
-          minHeight: { xs: 240, sm: 350 },
+          minHeight: { xs: 240, sm: 300 },
           display: "flex",
           alignItems: "center",
           justifyContent: "center",
@@ -54,9 +52,9 @@ export default function FencingWorks() {
         <Typography
           variant="h2"
           fontWeight="700"
-          sx={{ fontSize: { xs: 32, md: 48 } }}
+          sx={{ fontSize: { xs: 32, md: 48 }, color: "#f9f6f2" }}
         >
-          Fencing
+          Fencing Work
         </Typography>
 
         {/* <Typography
@@ -83,7 +81,7 @@ export default function FencingWorks() {
         }}
       >
         <Grid size={{ xs: 12, md: 8 }}>
-          <ImageStack />
+          <ImageStack category="fencing" />
           <Box m={1} margin={3}>
             <Typography
               mt={1.5}
